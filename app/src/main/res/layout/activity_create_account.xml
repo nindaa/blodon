@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#662923"
+    tools:context=".Activity.CreateAccountActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="127dp"
+                android:layout_height="126dp"
+                android:src="@drawable/blood"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/blodon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/revalia"
+                android:text="BLODON"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/kt2"
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:layout_below="@id/blodon1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#C16363" />
+
+            <ImageView
+                android:id="@+id/lglogin1"
+                android:layout_width="64dp"
+                android:layout_height="67dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/blodon1"
+                android:src="@drawable/registration"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/fullnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lglogin1"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/quicksand_light"
+                android:text="Full Name"
+                android:textColor="#050505"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/infullnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullnm"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"/>
+
+            <TextView
+                android:id="@+id/user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/infullnm"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/quicksand_light"
+                android:text="Username"
+                android:textColor="#050505"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/inuser1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user1"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"/>
+
+            <TextView
+                android:id="@+id/goldar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inuser1"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/quicksand_light"
+                android:text="Blood Group"
+                android:textColor="#050505"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ingoldar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goldar"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"/>
+            <TextView
+                android:id="@+id/pass1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingoldar"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/quicksand_light"
+                android:text="Password"
+                android:textColor="#050505"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inpass1"
+                android:layout_width="344dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/pass1"
+                android:layout_centerHorizontal="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginRight="39dp"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/konpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/quicksand_light"
+                android:text="Confirm Password"
+                android:textColor="#050505"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/inpass1"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inconpass"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/konpass"
+                android:layout_centerHorizontal="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginRight="39dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btregis"
+                android:layout_width="147dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/inconpass"
+                android:layout_marginTop="25dp"
+                android:text="Register"
+                android:fontFamily="@font/quicksand_light"
+                android:textColor="#050505"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tbl_bwh"/>
+
+            <TextView
+                android:id="@+id/tvloginhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btregis"
+                android:text="Already Have Account? Login Here"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

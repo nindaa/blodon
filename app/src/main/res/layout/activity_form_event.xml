@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FormEventActivity"
+    android:background="@drawable/main_bg">
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="1. Full Name"
+        android:textColor="#E5E5E5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fe_fullname"
+        android:layout_below="@id/tvnama"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tbl_bwh"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvbg"
+        android:layout_below="@id/fe_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="2. Blood Group"
+        android:textColor="#E5E5E5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fe_bg"
+        android:layout_below="@id/tvbg"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tbl_bwh"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvjk"
+        android:layout_below="@id/fe_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="3. Gender"
+        android:textColor="#E5E5E5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fe_gender"
+        android:layout_below="@id/tvjk"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tbl_bwh"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvumur"
+        android:layout_below="@id/fe_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="4. Age"
+        android:textColor="#E5E5E5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fe_age"
+        android:layout_below="@id/tvumur"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tbl_bwh"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvtelp"
+        android:layout_below="@id/fe_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="5. Phone Number "
+        android:textColor="#E5E5E5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fe_phone"
+        android:layout_below="@id/tvtelp"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tbl_bwh"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvpek"
+        android:layout_below="@id/fe_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="6. Job"
+        android:textColor="#E5E5E5"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fe_job"
+        android:layout_below="@id/tvpek"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tbl_bwh"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btregisevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fe_job"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="REGISTER"/>
+
+</RelativeLayout>

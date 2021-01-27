@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/linden_hill</item>
+        <item>@font/noto_sans</item>
+        <item>@font/quicksand_bold</item>
+        <item>@font/quicksand_light</item>
+        <item>@font/revalia</item>
+        <item>@font/rokkitt</item>
+    </array>
+</resources>

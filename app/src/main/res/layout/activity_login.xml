@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#662923"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="127dp"
+        android:layout_height="126dp"
+        android:src="@drawable/blood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/blodon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/revalia"
+        android:text="BLODON"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/kt1"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/blodon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/news_round"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/lglogin"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/blodon"
+        android:src="@drawable/logologin"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lglogin"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textColor="#050505"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/quicksand_light" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inuser"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="39dp"
+            android:layout_marginRight="39dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inuser"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textColor="#050505"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/quicksand_light" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inpass"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginLeft="39dp"
+            android:layout_marginRight="39dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="600dp">
+
+        <Button
+            android:id="@+id/btlogin"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inpass"
+            android:background="@drawable/tbl_bwh"
+            android:text="Login"
+            android:textColor="#050505"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/btcreate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inpass"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/tbl_bwh"
+            android:text="register"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

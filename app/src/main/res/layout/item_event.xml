@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/tbl_bwh"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/ie_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Event"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgEvent"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:id="@+id/ie_jdl"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgEvent">
+
+        <TextView
+            android:id="@+id/ie_namaevent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Nama Event"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/ie_waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Waktu"
+            android:textSize="10sp"
+            android:padding="5dp"
+            android:layout_below="@+id/ie_namaevent"/>
+
+        <TextView
+            android:id="@+id/ie_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Lokasi"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_below="@+id/ie_waktu"
+            android:padding="5dp"/>
+        <Button
+            android:id="@+id/ie_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/news_round"
+            android:layout_marginLeft="190dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
